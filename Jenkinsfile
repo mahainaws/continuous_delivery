@@ -1,51 +1,51 @@
 pipeline {
 	agent any
 	stages {
-		stage("Clone_Repository") {
+		stage("Clone") {
 			steps {
-				echo 'Clone is in Progress'
-				sleep 4
-				echo 'Clone is Completed'
+				echo 'Code is being pulled from GitHub'
+				sleep 6
+				echo 'Cloning is Completed'
 			}
 		}
 		
 		stage("Compile") {
 			steps {
 				echo 'Code compilation is in Progress'
-				sleep 3
+				sleep 5
 				echo 'Compilation is Completed'
 			}
 		}
 		
-		stage("Unit_Testing") {
+		stage("Unit Testing") {
 			steps {
 				echo 'Unit Testing is in Progress'
-				sleep 7
+				sleep 8
 				echo 'Unit Testing is Completed'
 			}
 		}
 		
-		stage("Integration_Testing") {
+		stage("Integration Testing") {
 			steps {
 				echo 'Integration Testing is in Progress'
-				sleep 4
+				sleep 11
 				echo 'Integration Testing is Completed'
-			}
-		}
-
-		stage("Test_Coverage") {
-			steps {
-				echo 'Test Coverage in Progress'
-				sleep 5
-				echo 'Test Coverage is Completed'
 			}
 		}
 		
 		stage("Packaging") {
 			steps {
 				echo 'Packaging in Progress'
-				sleep 3
+				sleep 4
 				echo 'Packaging is completed'
+			}
+		}
+		
+		stage("Push Artifacts") {
+			steps {
+				echo 'Pushing Artifacts to Nexus'
+				sleep 5
+				echo 'Artifcats are pushed to Nexus'
 			}
 		}
 		
