@@ -49,7 +49,7 @@ pipeline {
 			}
 		}
 		
-		stage("Dev_Deploy") {
+		stage("Deploy to Dev") {
 			steps {
 				echo 'Dev deploy is in Progress'
 				sleep 4
@@ -57,7 +57,7 @@ pipeline {
 			}
 		}
 		
-		stage("Smoke_Test") {
+		stage("Smoke Test") {
 			steps {
 				echo 'Smoke Test is in Progress'
 				sleep 2
@@ -65,7 +65,7 @@ pipeline {
 			}
 		}
 		
-		stage("Test_Deploy") {
+		stage("Deploy to Test") {
 			steps {
 				echo 'Test deploy is in Progress'
 				sleep 3
@@ -73,7 +73,7 @@ pipeline {
 			}
 		}
 		
-		stage("Func_Testing") {
+		stage("Funcational Testing") {
 			steps {
 				echo 'Functional Testing is started'
 				sleep 7
@@ -81,7 +81,7 @@ pipeline {
 			 }
 		}
 		
-		stage("UAT_Deploy") {
+		stage("DePloy to UAT") {
 			steps {
 				echo 'UAT deploy is in Progress'
 				sleep 3
@@ -89,7 +89,7 @@ pipeline {
 			}
 		}
 		
-		stage("UAT_Testing") {
+		stage("UAT Testing") {
 			steps {
 				echo 'UAT testing is in Progress'
 				sleep 4
@@ -97,7 +97,7 @@ pipeline {
 			}
 		}
 		
-		stage("Pre-Prod_Deploy") {
+		stage("Deploy to Pre-Prod") {
 			steps {
 				echo 'Pre-Prod deploy is in Progress'
 				sleep 3
@@ -105,7 +105,7 @@ pipeline {
 			}
 		}
 		
-		stage("Performance_Testing") {
+		stage("Performance Testing") {
 			steps {
 				echo 'Performance testing is in Progress'
 				sleep 5
