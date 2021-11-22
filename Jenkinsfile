@@ -5,7 +5,7 @@ pipeline {
 			steps {
 				echo 'Code is being pulled from GitHub'
 				sleep 6
-				echo 'Cloning is Completed'
+				echo 'Cloning is Completed..'
 			}
 		}
 		
