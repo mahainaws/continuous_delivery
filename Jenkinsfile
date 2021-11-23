@@ -54,7 +54,7 @@ pipeline {
 				echo 'Dev deploy is in Progress'
 				sleep 4
 				echo 'Dev deploy is completed'
-				sh 'cp index.html /opt/tomcat/webapps/demo'
+				sh 'cp index.html /opt/tomcat/webapps/ROOT'
 			}
 		}
 		
@@ -71,7 +71,7 @@ pipeline {
 				echo 'Test deploy is in Progress'
 				sleep 3
 				echo 'Test deploy is completed'
-				sh 'cp index.html /opt/tomcat/webapps/demo'
+				sh 'cp index.html /opt/tomcat/webapps/ROOT'
 			}
 		}
 		
@@ -88,7 +88,7 @@ pipeline {
 				echo 'UAT deploy is in Progress'
 				sleep 3
 				echo 'UAT deploy is completed'
-				sh 'cp index.html /opt/tomcat/webapps/demo'
+				sh 'cp index.html /opt/tomcat/webapps/ROOT'
 			}
 		}
 		
@@ -105,7 +105,7 @@ pipeline {
 				echo 'Pre-Prod deploy is in Progress'
 				sleep 3
 				echo 'Pre-Prod deploy is completed'
-				sh 'cp index.html /opt/tomcat/webapps/demo'
+				sh 'cp index.html /opt/tomcat/webapps/ROOT'
 			}
 		}
 		
